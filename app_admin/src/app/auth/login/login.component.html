@@ -1,0 +1,19 @@
+<div class="login">
+  <h2>Admin Login</h2>
+
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <div class="row">
+      <label for="email">Email</label>
+      <input id="email" type="email" formControlName="email" />
+    </div>
+
+    <div class="row">
+      <label for="password">Password</label>
+      <input id="password" type="password" formControlName="password" />
+    </div>
+
+    <button type="submit">Sign in</button>
+  </form>
+
+  <p *ngIf="error" class="error">{{ error }}</p>
+</div>

@@ -1,0 +1,33 @@
+<h2>{{ title }}</h2>
+<div *ngIf="error" style="color:#b00">{{ error }}</div>
+
+<form (ngSubmit)="submit()" #f="ngForm">
+  <div *ngIf="!codeParam">
+    <label>Code</label><br />
+    <input name="code" [(ngModel)]="model.code" required />
+  </div>
+
+  <label>Name</label><br />
+  <input name="name" [(ngModel)]="model.name" required /><br /><br />
+
+  <label>Start</label><br />
+  <input type="date" name="start" [(ngModel)]="model.start" required /><br /><br />
+
+  <label>Length (days)</label><br />
+  <input type="number" name="length" [(ngModel)]="model.length" required /><br /><br />
+
+  <label>Resort</label><br />
+  <input name="resort" [(ngModel)]="model.resort" /><br /><br />
+
+  <label>Price per person</label><br />
+  <input type="number" name="perPerson" [(ngModel)]="model.perPerson" /><br /><br />
+
+  <label>Image</label><br />
+  <input name="image" [(ngModel)]="model.image" /><br /><br />
+
+    <label>Description (one line; optional)</label><br />
+    <input name="description" [(ngModel)]="descriptionText" /><br /><br />
+
+  <button type="submit" [disabled]="saving || f.invalid">Save</button>
+  <a routerLink="/">Cancel</a>
+</form>

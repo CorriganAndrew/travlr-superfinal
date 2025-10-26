@@ -1,0 +1,21 @@
+{{> header}}
+{{> nav}}
+
+<div id="contents">
+  <div class="box">
+    <div>
+      <div class="body">
+        <h1>Travel</h1>
+        <ul id="sites">
+          {{#each trips}}
+            {{> tripCard}}
+          {{else}}
+            <li><p><em>No trips found. If you just added trips.json, restart the server.</em></p></li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{> footer}}

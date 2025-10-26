@@ -1,0 +1,15 @@
+<li>
+  <a href="/travel"><img src="/images/{{image}}" alt="{{name}}"></a>
+  <h2><a href="/travel">{{name}}</a></h2>
+
+  {{#if description}}
+    {{#each description}} <p>{{this}}</p> {{/each}}
+  {{/if}}
+
+  <p>
+    <strong>Length:</strong> {{length}} days &nbsp;|&nbsp;
+    <strong>Start:</strong> {{start}} &nbsp;|&nbsp;
+    <strong>Resort:</strong> {{resort}} &nbsp;|&nbsp;
+    <strong>Per person:</strong> {{perPerson}}
+  </p>
+</li>

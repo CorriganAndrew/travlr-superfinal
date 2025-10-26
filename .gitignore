@@ -1,0 +1,13 @@
+﻿node_modules/
+npm-debug.log*
+package-lock.json
+app_admin/node_modules/
+app_admin/package-lock.json
+app_admin/dist/
+app_admin/.angular/
+*.log
+.DS_Store
+Thumbs.db
+.env
+.idea/
+.vscode/

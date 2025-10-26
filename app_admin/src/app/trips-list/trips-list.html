@@ -1,0 +1,30 @@
+<h2>Trips</h2>
+
+<div *ngIf="loading">Loading…</div>
+<div *ngIf="error" style="color:#b00">{{ error }}</div>
+
+<p><a routerLink="/add">+ Add Trip</a></p>
+
+<table *ngIf="!loading && trips.length" border="1" cellpadding="6" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Code</th><th>Name</th><th>Start</th><th>Length</th><th>Price</th><th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let t of trips">
+      <td>{{ t.code }}</td>
+      <td>{{ t.name }}</td>
+      <td>{{ t.start | date:'yyyy-MM-dd' }}</td>
+      <td>{{ t.length }}</td>
+      <td>{{ t.perPerson | currency }}</td>
+      <td>
+        <a [routerLink]="['/edit', t.code]">Edit</a>
+        |
+        <button (click)="delete(t.code)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p *ngIf="!loading && !trips.length">No trips yet.</p>

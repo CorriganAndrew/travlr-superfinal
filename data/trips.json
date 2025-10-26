@@ -1,0 +1,55 @@
+[
+  {
+    "code": "GAL01",
+    "name": "Gale Reef",
+    "length": 7,
+    "start": "2025-06-15",
+    "resort": "Gale Reef Resort",
+    "perPerson": 1995,
+    "image": "reef1.jpg",
+    "description": [
+      "Gale Reef — Sed et augue lorem. In sit amet placerat arcu...",
+      "Gale Reef — Sed consequat libero ut turpis venenatis..."
+    ]
+  },
+  {
+    "code": "DAW02",
+    "name": "Dawson’s Reef",
+    "length": 5,
+    "start": "2025-07-20",
+    "resort": "Dawson Bay Bungalows",
+    "perPerson": 1590,
+    "image": "reef2.jpg",
+    "description": [
+      "Dawson’s Reef — Integer magna leo, posuere et dignissim vitae...",
+      "Dawson’s Reef — Morbi aliquet viverra metus eu consectetur..."
+    ]
+  },
+  {
+    "code": "CLA03",
+    "name": "Claire’s Reef",
+    "length": 10,
+    "start": "2025-08-10",
+    "resort": "Claire Atoll Villas",
+    "perPerson": 2499,
+    "image": "reef3.jpg",
+    "description": [
+      "Claire’s Reef — Donec sed felis risus. Nulla facilisi...",
+      "Claire’s Reef — In hac habitasse platea dictumst..."
+    ]
+  },
+  {
+  "code": "MAL04",
+  "name": "Maldives Escape",
+  "length": 12,
+  "start": "2025-09-05",
+  "resort": "Azure Lagoon Villas",
+  "perPerson": 3299,
+  "image": "reef1.jpg",
+  "description": [
+    "Maldives Escape — Bask in crystal-clear waters and white sand beaches while exploring vibrant coral reefs.",
+    "Maldives Escape — This 12-day getaway combines diving adventures, luxury villa stays, and unforgettable sunsets."
+  ]
+}
+
+]
